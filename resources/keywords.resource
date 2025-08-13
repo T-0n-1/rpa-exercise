@@ -13,6 +13,6 @@ Open New Tab ${url} In Browser
 Login To Application
     [Documentation]    Login to the application.
     [Arguments]             ${username}             ${password}
-    Type Text              ${USERNAME_FIELD}       ${username}
-    Type Text              ${PASSWORD_FIELD}       ${password}
+    Type Text               ${USERNAME_FIELD}       ${username}
+    Type Text               ${PASSWORD_FIELD}       ${password}
     Click                   ${LOGIN_BUTTON}
