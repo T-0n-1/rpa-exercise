@@ -12,5 +12,6 @@ Suite Teardown    Close Browser
 *** Task ***
 Login To AISingapore
     [Documentation]    Logs in to the AISingapore application.
-    Open New Tab ${URL} In Browser
-    Login                   ${USERNAME}             ${PASSWORD}
+    [Setup]    Open New Tab ${URL} In Browser
+    Login To Application       ${USERNAME}             ${PASSWORD}
+    [Teardown]              Close Context

@@ -10,9 +10,9 @@ Open New Tab ${url} In Browser
     New Context
     New Page                ${url}
 
-Login
+Login To Application
     [Documentation]    Login to the application.
     [Arguments]             ${username}             ${password}
-    Input Text              ${USERNAME_FIELD}       ${username}
-    Input Text              ${PASSWORD_FIELD}       ${password}
+    Type Text              ${USERNAME_FIELD}       ${username}
+    Type Text              ${PASSWORD_FIELD}       ${password}
     Click                   ${LOGIN_BUTTON}
