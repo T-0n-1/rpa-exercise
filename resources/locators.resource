@@ -18,5 +18,7 @@ ${JOB_DEPARTMENT_FIELD}             //*[@id="hiringDepartment"]
 ${JOB_EDULEVEL_FIELD}               //*[@id="educationLevel"]
 ${JOB_STARTDATE_FIELD}              //*[@id="postingStartDate"]
 ${JOB_ENDDATE_FIELD}                //*[@id="postingEndDate"]
+${JOB_REMOTE_RADIO_BUTTON}                //*[@id="remote"]/label[1]/span[1]/span[1]/input
+
 
 ${JOB_SUBMIT_BUTTON}                //*[@id="submit"]/span[1]
