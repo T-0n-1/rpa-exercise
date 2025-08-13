@@ -1,0 +1,4 @@
+robotframework
+robotframe-browser
+robotframe-robocop
+robotframe-requests
