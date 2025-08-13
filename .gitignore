@@ -1,0 +1,15 @@
+results/
+venv/
+.venv/
+browser/
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+resources/secrets.resource
+users.txt
+output.xml
+log.html
+report.html
+playwright-log.txt
+.DS_Store
+.pabotsuitenames

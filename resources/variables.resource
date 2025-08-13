@@ -1,4 +1,6 @@
 *** Variables ***
-${URL}    https://rpaexercise.aisingapore.org/login
-${USERNAME}    jane007
-${PASSWORD}    TheBestHR123
+${BROWSER}      chromium
+${HEADLESS}     False
+${URL}          http://flaskblog:5100
+${USERNAME}     timmy
+${PASSWORD}     timmy
