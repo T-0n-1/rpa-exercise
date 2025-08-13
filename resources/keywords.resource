@@ -30,4 +30,3 @@ Login To Application
 Add New Jobs
     [Documentation]    Post new jobs.
     Click                   ${ADD_NEW_JOB_BUTTON}
-

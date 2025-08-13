@@ -12,12 +12,13 @@ Suite Teardown    Close Browser
 *** Tasks ***
 Add New Job Postings From CSV
     [Documentation]    Adds new job postings from a CSV file.
-    [Setup]    Task Setup
+    [Setup]                 Task Setup
     Add Jobs From CSV
-    [Teardown]    Close Context
+    [Teardown]              Close Context
 
 
 *** Keywords ***
 Task Setup
+    [Documentation]    Short description.
     Open New Tab ${URL} In Browser
-    Login To Application    ${USERNAME}    ${PASSWORD}
+    Login To Application    ${USERNAME}             ${PASSWORD}

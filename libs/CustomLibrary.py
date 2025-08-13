@@ -1,9 +1,8 @@
+import string
 from pathlib import Path
+
 from robot.api.deco import keyword, library
 from robot.libraries.BuiltIn import BuiltIn
-
-import string
-
 
 
 @library
@@ -19,7 +18,17 @@ class CustomLibrary:
                 for char in job_data[0]:
                     if char not in string.digits:
                         break
-                        
-                self.browserlib.input_text("${JOB_TITLE_FIELD}", job_data[0])
-                self.browserlib.input_text("${JOB_DESCRIPTION_FIELD}", job_data[1])
-                self.browserlib.click_element("${ADD_JOB_BUTTON}")
+                self.browserlib.click("${JOB_TITLE_FIELD}")
+                self.browserlib.input_text("${JOB_TITLE_FIELD}", job_data[1])
+                self.browserlib.click("${JOB_DESCRIPTION_FIELD}")
+                self.browserlib.input_text("${JOB_DESCRIPTION_FIELD}", job_data[2])
+                self.browserlib.click("${JOB_DEPARTMENT_FIELD}")
+                self.browserlib.input_text("${JOB_DEPARTMENT_FIELD}", job_data[3])
+                self.browserlib.click("${JOB_EDULEVEL_FIELD}")
+                self.browserlib.input_text("${JOB_EDULEVEL_FIELD}", job_data[4])
+                self.browserlib.click("${JOB_STARTDATE_FIELD}")
+                self.browserlib.input_text("${JOB_STARTDATE_FIELD}", job_data[5])
+                self.browserlib.click("${JOB_ENDDATE_FIELD}")
+                self.browserlib.input_text("${JOB_ENDDATE_FIELD}", job_data[6])
+
+                self.browserlib.click("${JOB_SUBMIT_BUTTON}")

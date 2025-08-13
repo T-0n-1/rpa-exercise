@@ -2,3 +2,6 @@ robotframework
 robotframe-browser
 robotframe-robocop
 robotframe-requests
+black
+ruff 
+isort
