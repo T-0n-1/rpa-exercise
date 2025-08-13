@@ -1,15 +1,16 @@
 *** Settings ***
 Documentation    Login Task
-Library    Browser
 
-Resource    ./resources/variables.resource
-Resource    ./resources/keeywords.resource
+Library    Browser
+Resource    ../resources/variables.resource
+Resource    ../resources/keywords.resource
 
 Suite Setup    New Browser    ${BROWSER}    ${HEADLESS}
 Suite Teardown    Close Browser
 
+
 *** Task ***
-Login to AISingapore
+Login To AISingapore
     [Documentation]    Logs in to the AISingapore application.
-    Open New Tab ${LOGIN_URL} In Browser
-    Login    ${USERNAME}    ${PASSWORD}
+    Open New Tab ${URL} In Browser
+    Login                   ${USERNAME}             ${PASSWORD}

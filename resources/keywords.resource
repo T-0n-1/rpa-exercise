@@ -1,8 +1,8 @@
 *** Settings ***
 Library    Browser
-
 Resource    variables.resource
 Resource    locators.resource
+
 
 *** Keywords ***
 Open New Tab ${url} In Browser
@@ -10,9 +10,9 @@ Open New Tab ${url} In Browser
     New Context
     New Page                ${url}
 
-
 Login
-    [Arguments]    ${username}    ${password}
-    Input Text    ${USERNAME_FIELD}    ${username}
-    Input Text    ${PASSWORD_FIELD}    ${password}
-    Click    ${LOGIN_BUTTON}
+    [Documentation]    Login to the application.
+    [Arguments]             ${username}             ${password}
+    Input Text              ${USERNAME_FIELD}       ${username}
+    Input Text              ${PASSWORD_FIELD}       ${password}
+    Click                   ${LOGIN_BUTTON}
